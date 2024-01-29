@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+<input type="text" name="" id="user">
+<button onclick="add()">Add</button>
+<button onclick="add2()">Add2</button>
+
+ <!-- <img src="/download (1).jpeg" alt="" class="dp" width="100px" height="100">
+ <img src="/download (3).jpeg" alt="" class="dp" width="100px" height="100">
+ <img src="/download (3).jpeg" alt="" class="dp" width="100px" height="100">
+ <img src="/download (3).jpeg" alt="" class="dp" width="100px" height="100">
+ <img src="/download (1).jpeg" alt="" class="dp" width="100px" height="100">
+ <img src="/download (3).jpeg" alt="" class="dp" width="100px" height="100">
+ <img src="/download (3).jpeg" alt="" class="dp" width="100px" height="100">
+ <img src="/download (3).jpeg" alt="" class="dp" width="100px" height="100"> -->
+
+ 
+    <script>
+//         let obj = {
+//             firstName : "Farheen",
+//             lastName : "Irfan",
+//             fullName : ()=> obj.firstName.concat(" ", obj.lastName),
+//         }
+// console.log(obj.fullName())
+//  let imagesarray = document.getElementsByClassName("dp");
+// for(i=0; i<images.length; i++){
+//     imagesarray[i].setAttribute("src" , imagesarray<[i]);
+// }
+
+let txt =[];
+
+let add = () => {
+   let user = document.getElementById("user").value;
+
+    let foundResult = txt.find( (elements) => {
+            return user == elements;
+        }
+    )
+    if (foundResult){
+        console.log(`user ${foundResult} Already registered`);
+        alert
+    }
+    else{
+        txt.push(user);
+        console.log(txt);
+    }
+}
+
+    </script>
+    <!-- <script src="/images.js"></script> -->
+</body>
+</html>
